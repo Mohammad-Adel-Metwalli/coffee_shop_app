@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "669010270124",
+    "project_id": "qahwatuna-app",
+    "storage_bucket": "qahwatuna-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669010270124:android:cfbadda6274d85199e8c09",
+        "android_client_info": {
+          "package_name": "com.example.coffee_shop_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsWd3tlFFCXylX8DVApXwXScx1em_IDQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
