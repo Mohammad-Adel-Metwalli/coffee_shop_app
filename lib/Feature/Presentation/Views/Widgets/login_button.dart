@@ -1,7 +1,9 @@
 import 'package:coffee_shop_app/Core/Utils/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 import '../../../../Core/Utils/Functions/sign_in_function.dart';
 import '../../../../Core/Utils/constant_colors.dart';
+import '../../../../Core/Utils/constants.dart';
 import '../../../Data/Models/user_model.dart';
 
 class LoginButton extends StatelessWidget
@@ -24,6 +26,8 @@ class LoginButton extends StatelessWidget
           if(formKey.currentState!.validate())
           {
             signInFunction(userModel, context);
+            var visitBox = Hive.box(kVisitBox);
+            visitBox.add({'visit': true});
           }
         },
         color: brown,

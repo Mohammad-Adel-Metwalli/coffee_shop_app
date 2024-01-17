@@ -7,3 +7,5 @@ const customedGrey = Colors.grey;
 const green = Color(0xff208b3a);
 const customedRed = Colors.red;
 const orange = Color(0xffff9e00);
+const customedBlack = Colors.black;
+const purple = Color(0xff5a189a);

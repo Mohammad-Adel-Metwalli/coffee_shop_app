@@ -15,15 +15,11 @@ class ThirdPartyApps extends StatelessWidget
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ThirdPartyApp(thirdPartyIcon: Brand(Brands.google, size: 40)),
+        ThirdPartyApp(thirdPartyIcon: Brand(Brands.google, size: 40), iconName: 'Google'),
 
         SizedBox(width: MediaQuery.sizeOf(context).width * 0.02),
 
-        const ThirdPartyApp(thirdPartyIcon: Icon(Bootstrap.apple, size: 35, color: customedGrey)),
-
-        SizedBox(width: MediaQuery.sizeOf(context).width * 0.02),
-
-        const ThirdPartyApp(thirdPartyIcon: Icon(Bootstrap.facebook, size: 40, color: luxuryBlue)),
+        const ThirdPartyApp(thirdPartyIcon: Icon(AntDesign.github_fill, size: 40, color: customedBlack), iconName: 'GitHub'),
       ],
     );
   }

@@ -1,6 +1,7 @@
 import 'package:coffee_shop_app/Feature/Data/Models/user_model.dart';
 import 'package:coffee_shop_app/Feature/Presentation/Views/Widgets/success_awesome_dialog.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:go_router/go_router.dart';
 import '../../../Feature/Presentation/Views/Widgets/failure_awesome_dialog.dart';
 
 Future<void> signInFunction(UserModel userModel, context) async
@@ -13,6 +14,7 @@ Future<void> signInFunction(UserModel userModel, context) async
     );
 
     successAwesomeDialog(context, 'أنرتنا').show();
+    Future.delayed(const Duration(seconds: 4), () => GoRouter.of(context).push('/splashView'));
   }
 
   on FirebaseAuthException catch (e)

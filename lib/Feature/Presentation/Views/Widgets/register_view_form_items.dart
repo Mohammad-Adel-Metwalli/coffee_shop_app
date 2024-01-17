@@ -22,7 +22,7 @@ class RegisterViewFormItems extends StatefulWidget
 class _RegisterViewFormItemsState extends State<RegisterViewFormItems>
 {
   GlobalKey<FormState> formKey = GlobalKey();
-  UserModel userModel = UserModel('', '', '');
+  UserModel userModel = UserModel('', '', '', '');
 
   @override
   Widget build(BuildContext context)

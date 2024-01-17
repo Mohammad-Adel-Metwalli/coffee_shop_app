@@ -1,5 +1,7 @@
 import 'package:coffee_shop_app/Core/Utils/Functions/sign_up_function.dart';
+import 'package:coffee_shop_app/Core/Utils/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 import '../../../../Core/Utils/constant_colors.dart';
 import '../../../../Core/Utils/styles.dart';
 import '../../../Data/Models/user_model.dart';
@@ -22,6 +24,8 @@ class RegisterButton extends StatelessWidget
           if(formKey.currentState!.validate())
           {
             signUpFunction(userModel, context);
+            var visitBox = Hive.box(kVisitBox);
+            visitBox.add({'visit': true});
           }
         },
         color: brown,

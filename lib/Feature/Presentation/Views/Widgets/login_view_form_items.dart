@@ -23,7 +23,7 @@ class LoginViewFormItems extends StatefulWidget
 class _LoginViewFormItemsState extends State<LoginViewFormItems>
 {
   GlobalKey<FormState> formKey = GlobalKey();
-  UserModel userModel = UserModel('', '', '');
+  UserModel userModel = UserModel('', '', '', '');
 
   @override
   Widget build(BuildContext context)
