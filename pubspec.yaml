@@ -43,6 +43,6 @@ flutter:
     - Assets/Images/
     - Assets/Fonts/
   fonts:
-  - family: Marsmonster
-    fonts:
-    - asset: Assets/Fonts/MarsmonsterDemo-Regular.ttf
+    - family: Marsmonster
+      fonts:
+        - asset: Assets/Fonts/MarsmonsterDemo-Regular.ttf
