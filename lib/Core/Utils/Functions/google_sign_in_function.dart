@@ -27,7 +27,7 @@ Future<UserCredential> signInWithGoogle(context) async
   userBox.add(userModel);
 
   successAwesomeDialog(context, 'أقمرت قهوتنا يا ${userModel.arabicUsername}').show();
-  Future.delayed(const Duration(seconds: 4), () => GoRouter.of(context).push('/splashView'));
+  Future.delayed(const Duration(seconds: 4), () => GoRouter.of(context).replace('/splashView'));
 
   // Once signed in, return the UserCredential
   return await FirebaseAuth.instance.signInWithCredential(credential);

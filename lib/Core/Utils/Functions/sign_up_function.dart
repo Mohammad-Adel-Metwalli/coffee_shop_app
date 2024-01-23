@@ -20,7 +20,7 @@ Future<void> signUpFunction(UserModel userModel, context) async
     userBox.add(userModel);
 
     successAwesomeDialog(context, 'أقمرت قهوتنا يا ${userModel.username}').show();
-    Future.delayed(const Duration(seconds: 4), () => GoRouter.of(context).push('/splashView'));
+    Future.delayed(const Duration(seconds: 4), () => GoRouter.of(context).replace('/splashView'));
   }
 
   on FirebaseAuthException catch (e)

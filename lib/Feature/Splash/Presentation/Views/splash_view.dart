@@ -1,4 +1,6 @@
+import 'package:coffee_shop_app/Core/Utils/constant_colors.dart';
 import 'package:flutter/material.dart';
+import 'Widgets/splash_view_body.dart';
 
 class SplashView extends StatelessWidget
 {
@@ -8,11 +10,8 @@ class SplashView extends StatelessWidget
   Widget build(BuildContext context)
   {
     return const Scaffold(
-      body: Column(
-        children: [
-
-        ],
-      ),
+      backgroundColor: babyBlue,
+      body: SplashViewBody(),
     );
   }
 }

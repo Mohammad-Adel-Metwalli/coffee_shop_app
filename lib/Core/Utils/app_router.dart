@@ -1,4 +1,5 @@
 import 'package:coffee_shop_app/Core/Errors/hive_error_handling.dart';
+import 'package:coffee_shop_app/Feature/Home/Presentation/Views/home_view.dart';
 import 'package:coffee_shop_app/Feature/Splash/Presentation/Views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -19,6 +20,17 @@ abstract class AppRouter
           {
             return CustomTransitionPage(
               child: const SplashView(),
+              transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child),
+            );
+          },
+        ),
+
+        GoRoute(
+          path: '/homeView',
+          pageBuilder: (context, state)
+          {
+            return CustomTransitionPage(
+              child: const HomeView(),
               transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child),
             );
           },

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'constant_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,4 +13,5 @@ abstract class Styles
   static final createAccountStyle = GoogleFonts.lateef(color: babyPowder, fontSize: 20, fontWeight: FontWeight.bold);
   static final loginButtonStyle = GoogleFonts.lateef(color: babyPowder, fontSize: 28, fontWeight: FontWeight.bold);
   static const errorStyle = TextStyle(color: babyPowder);
+  static final appBarStyle = GoogleFonts.lateef(color: babyPowder, fontWeight: FontWeight.bold, fontSize: 25.sp);
 }
